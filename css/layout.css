@@ -1,0 +1,44 @@
+.container {
+  background-color: lightyellow;
+  padding: 20px;
+}
+
+.parent {
+  /* STEP ONE: The Parent Element is given the display property of 'FLEX'*/
+  display: flex;
+
+  /* STEP TWO: Flex direction row | row reverse | column | column-reverse */
+  /* flex-direction: row-reverse; */
+
+  /* STEP THREE: Justify Content center | flex-start (default) | flex-end | space-around | space-between */
+  justify-content: center;
+  /* space-between,flex-end */
+
+  background-color: lightblue;
+  padding: 20px;
+
+}
+
+.child {
+/* STEP FOUR: Flex Grow, if all children/columns are set to 1, then they will take up equal space*/
+  /* flex-grow: 1; */
+
+  background-color: salmon;
+  margin: 2px;
+  padding: 40px;
+  font-size: 20px;
+}
+
+
+/* STEP FIVE: Give each column a percentage width to make it simple! */
+.child:nth-of-type(1) {
+  width: 25%;
+}
+
+.child:nth-of-type(2) {
+  width: 50%;
+}
+
+.child:nth-of-type(3) {
+  width: 25%;
+}
